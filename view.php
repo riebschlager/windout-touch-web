@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Art - The816</title>
+  <title>My Artwork - WindOut</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Artwork created by WindOut, an interactive installation by Chris Riebschlager.">
   <meta name="author" content="Chris Riebschlager">
@@ -42,10 +42,12 @@
     </div>
     <div class="row-fluid">
       <div class="span6">
-        <p>Thanks for creating some artwork with me. Would you like a print of your artwork?<br /></p>
+        <p>Thank you for creating some artwork with me. Would you like a print of your piece?<br />Several sizes and formats are available.
+        Send me an email: <a href="mailto:chris@the816.com">chris@the816.com</a></p>
+        <p>Thanks again,<br />Chris Riebschlager</p>
       </div>
       <div class="span6" style="text-align:right;">
-        <p>Share your artwork:&nbsp;
+        <p>Share your masterpiece:&nbsp;
           <span class="st_facebook" displayText="Facebook"></span>
           <span class="st_twitter" displayText="Tweet"></span>
           <span class="st_pinterest" displayText="Pinterest"></span>
@@ -54,8 +56,6 @@
       </div>
     </div>
   </div>
-  <script src="/assets/js/jquery-1.10.2.min.js"></script>
-  <script src="/assets/js/bootstrap.min.js"></script>
   <script>
     (function(i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
