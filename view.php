@@ -35,7 +35,7 @@
     <div class="row-fluid">
       <div class="span12">
         <?php
-          $imgTag = "<img id=\"artwork\" src=\"https://dl.dropboxusercontent.com/u/3308391/windout/" . $_GET['id'] . ".jpg\" class=\"img-polaroid\">";
+          $imgTag = "<img id=\"artwork\" src=\"/assets/artwork/" . $_GET['id'] . ".jpg\" class=\"img-polaroid\">";
           echo $imgTag;
         ?>
       </div>

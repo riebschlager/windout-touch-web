@@ -1,21 +1,42 @@
+<?php
+function renderThumbnails(){
+  $dirname = "assets/thumbnail/";
+  $images = glob($dirname . "*.jpg");
+  foreach($images as $image) {
+    $id = substr($image,17,4);
+    echo "\t";
+    echo '<li class="span2">';
+    echo '<a href="/' . $id . '" class="thumbnail">';
+    echo '<img alt="Thumbnail ' . $id . '" src="' . $image . '">';
+    echo '</a>';
+    echo '</li>';
+    echo "\n";
+  }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>Art - The816</title>
+  <title>WindOut - Artwork created by WindOut, an interactive installation by Chris Riebschlager.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Artwork created by WindOut, an interactive installation by Chris Riebschlager.">
   <meta name="author" content="Chris Riebschlager">
-  <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400">
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid">
+    <h1>WindOut</h1>
+    <h4>Artwork created by WindOut, an interactive installation by <a href="http://the816.com">Chris Riebschlager</a>.</h4>
+    <ul class="thumbnails">
+<?php renderThumbnails(); ?>
+    </ul>
   </div>
-  <script src="/assets/js/jquery-1.10.2.min.js"></script>
-  <script src="/assets/js/bootstrap.min.js"></script>
 </body>
-
 </html>
