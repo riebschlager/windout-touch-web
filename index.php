@@ -34,6 +34,7 @@ function renderThumbnails(){
   <div class="container-fluid">
     <h1>WindOut</h1>
     <h4>Artwork created by WindOut, an interactive installation by <a href="http://the816.com">Chris Riebschlager</a>.</h4>
+    <iframe src="http://player.vimeo.com/video/72313392" width="940" height="529" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     <ul class="thumbnails">
 <?php renderThumbnails(); ?>
     </ul>
